@@ -102,7 +102,7 @@ def square_footage():
 def zip_code():
     mpl.subplot(3, 1, 2)
     
-    mpl.scatter(filter_by_manhattan(data, "ZIP CODE"), 
+    mpl.bar(filter_by_manhattan(data, "ZIP CODE"), 
                 filter_by_manhattan(data, "SALE PRICE"), color='green')
 
     mpl.xlabel("Zip Code")
