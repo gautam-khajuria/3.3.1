@@ -8,8 +8,11 @@ zip code, and year built.
 '''
 
 import matplotlib.pyplot as mpl
+from matplotlib import pylab as pl
 import pandas as pd
 import math
+
+pl.gcf().canvas.set_window_title("Price vs. Square Footage, Zip Code, and Year Built in Manhattan")
 
 # Prints out the min, max, average, and sum of data for a giving type (price, sqft, etc) and its corresponding min and max
 def print_data(obj, data):
